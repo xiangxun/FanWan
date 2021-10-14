@@ -1,0 +1,30 @@
+﻿<Window x:Class="FanWanDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FanWanDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" x:Name="mainWindow">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="1" x:Name="label" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="100" Margin="50,50,0,0" Content="偏移高度"></Label>
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="textBox" HorizontalAlignment="Left" Height="25" Margin="50,50,0,0" TextWrapping="Wrap" Text="1000" VerticalAlignment="Top" Width="120"/>
+        <Button Grid.Row="2" Grid.Column="2" x:Name="button" Content="确定" HorizontalAlignment="Left" Margin="50,50,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click"/>
+        <ComboBox Grid.Row="2" Grid.Column="1" x:Name="cbBlist" Width="100" Height="50" />
+        <Button Grid.Row="0" Grid.Column="0" x:Name="button1" Content="1"  />
+        <Button Grid.Row="1" Grid.Column="0" x:Name="button2" Content="2"  />
+
+
+
+    </Grid>
+</Window>
